@@ -6,3 +6,4 @@ psycopg2
 django-cors-headers
 django-mongoengine
 dnspython
+django-rest-framework-mongoengine

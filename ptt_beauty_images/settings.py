@@ -9,8 +9,10 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-from mongoengine import connect
-connect("example-project", host="mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/")
+
+#mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/?retryWrites=true&w=majority&appName=mongodb-restful
+#from mongoengine import connect
+#connect("example-project", host="mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYDNHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/")
 #mongodb+srv://pyfbsdk59:<password>@mongodb-restful.5xgpkpw.mongodb.net/
 import os
 
