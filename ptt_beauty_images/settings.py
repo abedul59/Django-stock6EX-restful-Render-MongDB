@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 #mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/?retryWrites=true&w=majority&appName=mongodb-restful
-#from mongoengine import connect
-#connect("example-project", host="mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYDNHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/")
+from mongoengine import connect
+connect("example-project", host="mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYDNHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/")
 #mongodb+srv://pyfbsdk59:<password>@mongodb-restful.5xgpkpw.mongodb.net/
 import os
 
@@ -102,12 +102,14 @@ WSGI_APPLICATION = 'ptt_beauty_images.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+'''
 DATABASES = {
 	    'default': dj_database_url.config(
 	        default=os.environ.get('MONGODB_EXTERNAL_DB_URL'),
 	        conn_max_age=600
 	    )
 	}
+'''
 
 
 # Password validation
