@@ -12,11 +12,11 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 #mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/?retryWrites=true&w=majority&appName=mongodb-restful
 from mongoengine import connect
-connect("example-project", host="mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYDNHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/")
+connect("stock6restful2024", host="mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYDNHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/")
 #mongodb+srv://pyfbsdk59:<password>@mongodb-restful.5xgpkpw.mongodb.net/
 import os
 
-import dj_database_url
+#import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
