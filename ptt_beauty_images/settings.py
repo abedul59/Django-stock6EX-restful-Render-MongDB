@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_mongoengine',
+    'django_mongoengine',
     'corsheaders',
 ]
 
@@ -110,11 +111,15 @@ DATABASES = {
 	    )
 	}
 '''
-DATABASES = {
-    'default': {
-        'ENGINE': '',
-    }
+MONGODB_DATABASES = {
+    "default": {
+        "name": 'stock6restful2024',
+        "host": 'mongodb-restful.5xgpkpw.mongodb.net',
+        "password": 'NHd4ZEVmHONPZiYD',
+        "username": 'pyfbsdk59',
+    },
 }
+#mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/?retryWrites=true&w=majority&appName=mongodb-restful
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
