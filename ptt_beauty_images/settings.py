@@ -113,7 +113,7 @@ DATABASES = {
 '''
 DATABASES = {
     'default': {
-        'ENGINE': 'django',
+        'ENGINE': 'djongo',
         'ENFORCE_SCHEMA': False,
         'NAME': 'mongodb-restful',
         'ENFORCE_SCHEMA': False,
