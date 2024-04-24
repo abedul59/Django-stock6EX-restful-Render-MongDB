@@ -107,7 +107,7 @@ WSGI_APPLICATION = 'ptt_beauty_images.wsgi.application'
 # settings.py
 MONGODB_DATABASES = {
     'default': {
-        'NAME': 'mongodb-restful',
+        'NAME': 'test',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
             'host': 'mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/?retryWrites=true&w=majority',
@@ -119,7 +119,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'ENFORCE_SCHEMA': False,
-        'NAME': 'mongodb-restful',
+        'NAME': 'test',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
             'host': 'mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/?retryWrites=true&w=majority',
