@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'rest_framework_mongoengine',
     'django_mongoengine',
     'corsheaders',
+    'djongo',
 ]
 
 MIDDLEWARE = [
@@ -103,6 +104,16 @@ WSGI_APPLICATION = 'ptt_beauty_images.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+# settings.py
+MONGODB_DATABASES = {
+    'default': {
+        'NAME': 'mongodb-restful',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': 'mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/?retryWrites=true&w=majority',
+        }
+    }
+}
 
 DATABASES = {
     'default': {
