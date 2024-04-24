@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 #mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/?retryWrites=true&w=majority&appName=mongodb-restful
-from mongoengine import connect
-connect("stock6restful2024", host="mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYDNHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/")
+#from mongoengine import connect
+#connect("stock6restful2024", host="mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYDNHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/")
 #mongodb+srv://pyfbsdk59:<password>@mongodb-restful.5xgpkpw.mongodb.net/
 import os
 
@@ -111,13 +111,16 @@ DATABASES = {
 	    )
 	}
 '''
-MONGODB_DATABASES = {
-    "default": {
-        "name": 'stock6restful2024',
-        "host": 'mongodb-restful.5xgpkpw.mongodb.net',
-        "password": 'NHd4ZEVmHONPZiYD',
-        "username": 'pyfbsdk59',
-    },
+DATABASES = {
+    'default': {
+        'ENGINE': 'django',
+        'ENFORCE_SCHEMA': False,
+        'NAME': 'mongodb-restful',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': 'mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/?retryWrites=true&w=majority',
+        }
+    }
 }
 #mongodb+srv://pyfbsdk59:NHd4ZEVmHONPZiYD@mongodb-restful.5xgpkpw.mongodb.net/?retryWrites=true&w=majority&appName=mongodb-restful
 
