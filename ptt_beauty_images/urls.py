@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from images.views import ImageViewSet, Stock6Sign202212ViewSet, Stock6Sign202304ViewSet, Stock6Sign202308ViewSet, Stock6Sign202309ViewSet, Stock6Sign202310ViewSet, Stock6Sign202311ViewSet, Stock6Sign202312ViewSet, Stock6Sign202402ViewSet, Stock6Sign202403ViewSet, Stock6Sign202404ViewSet, Stock6Sign202405ViewSet, Stock6Sign202406ViewSet, Stock6Sign202407ViewSet, Stock6Sign202408ViewSet, Stock6Sign202409ViewSet, Stock6Sign202410ViewSet, Stock6Sign202411ViewSet, Stock6Sign202412ViewSet
+from images.views import ImageViewSet, Stock6Sign202212ViewSet, Stock6Sign202304ViewSet, Stock6Sign202308ViewSet, Stock6Sign202309ViewSet, Stock6Sign202310ViewSet, Stock6Sign202311ViewSet, Stock6Sign202312ViewSet, Stock6Sign202402ViewSet, S6r202403ViewSet, Stock6Sign202404ViewSet, Stock6Sign202405ViewSet, Stock6Sign202406ViewSet, Stock6Sign202407ViewSet, Stock6Sign202408ViewSet, Stock6Sign202409ViewSet, Stock6Sign202410ViewSet, Stock6Sign202411ViewSet, Stock6Sign202412ViewSet
 
 router = DefaultRouter()
 router.register('images', ImageViewSet)
@@ -28,7 +28,7 @@ router.register('Stock6Sign202310', Stock6Sign202310ViewSet)
 router.register('Stock6Sign202311', Stock6Sign202311ViewSet)
 router.register('Stock6Sign202312', Stock6Sign202312ViewSet)
 router.register('Stock6Sign202402', Stock6Sign202402ViewSet)
-router.register('Stock6Sign202403', Stock6Sign202403ViewSet)
+router.register('S6r202403', S6r202403ViewSet)
 router.register('Stock6Sign202404', Stock6Sign202404ViewSet)
 router.register('Stock6Sign202405', Stock6Sign202405ViewSet)
 router.register('Stock6Sign202406', Stock6Sign202406ViewSet)

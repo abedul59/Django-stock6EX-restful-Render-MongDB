@@ -1204,7 +1204,7 @@ class Stock6Sign202402(models.Model):
         return self.cStockID 
     
 
-class Stock6Sign202403(models.Model):
+class S6r202403(models.Model):
     #Url = models.TextField()
     
     cStockID = models.CharField(max_length=5)

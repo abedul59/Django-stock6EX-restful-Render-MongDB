@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from rest_framework import viewsets, status
 #from images.models import Images, Stock6Sign202212, Stock6Sign202304, Stock6Sign202308, Stock6Sign202309, Stock6Sign202310, Stock6Sign202311, Stock6Sign202312, Stock6Sign202402
-from images.serializers import ImageSerializer, Stock6Sign202212Serializer, Stock6Sign202304Serializer, Stock6Sign202308Serializer, Stock6Sign202309Serializer, Stock6Sign202310Serializer, Stock6Sign202311Serializer, Stock6Sign202312Serializer, Stock6Sign202402Serializer, Stock6Sign202403Serializer, Stock6Sign202404Serializer, Stock6Sign202405Serializer, Stock6Sign202406Serializer, Stock6Sign202407Serializer, Stock6Sign202408Serializer, Stock6Sign202409Serializer, Stock6Sign202410Serializer, Stock6Sign202411Serializer, Stock6Sign202412Serializer
-from images.models import Images, Stock6Sign202212, Stock6Sign202304, Stock6Sign202308, Stock6Sign202309, Stock6Sign202310, Stock6Sign202311, Stock6Sign202312, Stock6Sign202402,Stock6Sign202403,Stock6Sign202404,Stock6Sign202405,Stock6Sign202406,Stock6Sign202407,Stock6Sign202408,Stock6Sign202409,Stock6Sign202410,Stock6Sign202411,Stock6Sign202412
+from images.serializers import ImageSerializer, Stock6Sign202212Serializer, Stock6Sign202304Serializer, Stock6Sign202308Serializer, Stock6Sign202309Serializer, Stock6Sign202310Serializer, Stock6Sign202311Serializer, Stock6Sign202312Serializer, Stock6Sign202402Serializer, S6r202403Serializer, Stock6Sign202404Serializer, Stock6Sign202405Serializer, Stock6Sign202406Serializer, Stock6Sign202407Serializer, Stock6Sign202408Serializer, Stock6Sign202409Serializer, Stock6Sign202410Serializer, Stock6Sign202411Serializer, Stock6Sign202412Serializer
+from images.models import Images, Stock6Sign202212, Stock6Sign202304, Stock6Sign202308, Stock6Sign202309, Stock6Sign202310, Stock6Sign202311, Stock6Sign202312, Stock6Sign202402,S6r202403,Stock6Sign202404,Stock6Sign202405,Stock6Sign202406,Stock6Sign202407,Stock6Sign202408,Stock6Sign202409,Stock6Sign202410,Stock6Sign202411,Stock6Sign202412
 
 
 # from ptt_beauty_images import settings
@@ -230,7 +230,7 @@ class Stock6Sign202402ViewSet(viewsets.ModelViewSet):
         return Response(result.data, status=status.HTTP_200_OK)
 
 
-class Stock6Sign202403ViewSet(viewsets.ModelViewSet):
+class S6r202403ViewSet(viewsets.ModelViewSet):
     """
     This viewset automatically provides `list`, `create`, `retrieve`,
     `update` and `destroy` actions.
@@ -238,16 +238,16 @@ class Stock6Sign202403ViewSet(viewsets.ModelViewSet):
     Additionally we also provide an extra `highlight` action.
     """
 
-    queryset = Stock6Sign202403.objects.all()
-    serializer_class = Stock6Sign202403Serializer
+    queryset = S6r202403.objects.all()
+    serializer_class = S6r202403Serializer
 
 
     # [ GET ] /api/image/random/
     @action(detail=False, methods=["get"], url_path="getstockinfo/(?P<stockid_pk>[^/.]+)")
     def get_stock_info(self, request, stockid_pk, pk=None):
 
-        obj = Stock6Sign202403.objects.get(cStockID=stockid_pk)
-        result = Stock6Sign202403Serializer(obj)
+        obj = S6r202403.objects.get(cStockID=stockid_pk)
+        result = S6r202403Serializer(obj)
         return Response(result.data, status=status.HTTP_200_OK)
 
 
