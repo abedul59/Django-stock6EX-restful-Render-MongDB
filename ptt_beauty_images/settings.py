@@ -114,7 +114,7 @@ MONGODB_DATABASES = {
     }
 }
 '''
-
+#
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
