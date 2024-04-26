@@ -49,11 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'rest_framework_mongoengine',
-    'django_mongoengine',
-    'corsheaders',
-    'djongo',
+    'rest_framework',  # Django REST framework
+    'corsheaders',  # CORS headers
 ]
 
 MIDDLEWARE = [
@@ -70,6 +67,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
 	    #'https://stock6-restfulex.onrender.com/',
+        'https://vuejs3cp-stock6restful.vercel.app/',
         'https://vuejs3op-stock6restful.vercel.app/',
         'https://react-stock6restful.vercel.app/'
 	]
@@ -105,6 +103,7 @@ WSGI_APPLICATION = 'ptt_beauty_images.wsgi.application'
 #     }
 # }
 # settings.py
+'''
 MONGODB_DATABASES = {
     'default': {
         'NAME': 'test',
@@ -114,6 +113,7 @@ MONGODB_DATABASES = {
         }
     }
 }
+'''
 
 DATABASES = {
     'default': {
