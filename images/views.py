@@ -423,7 +423,7 @@ class Stock6Sign202412ViewSet(viewsets.ModelViewSet):
     queryset = Stock6Sign202412.objects.all()
     serializer_class = Stock6Sign202412Serializer
 
-
+#
     # [ GET ] /api/image/random/
     @action(detail=False, methods=["get"], url_path="getstockinfo/(?P<stockid_pk>[^/.]+)")
     def get_stock_info(self, request, stockid_pk, pk=None):
