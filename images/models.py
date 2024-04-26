@@ -1366,7 +1366,7 @@ class S6r202403(models.Model):
 
     class Meta:
         # managed = False
-        db_table = 'Stock6Sign202403'
+        db_table = 's6r202403'
     def __str__(self):
         return self.cStockID 
     
